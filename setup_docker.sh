@@ -8,5 +8,5 @@ elif [ "$1" == "push" ]; then
 elif [ "$1" == "run" ]; then
 	echo "[info] Run the docker container"
 	xhost +
-	docker run -it --rm -v $HOME:$HOME -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY aminehy/tensorrt:v1.2
+	docker run -it --rm -v $(pwd):/workspace -w /workspace -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY aminehy/tensorrt:v1.2
 fi
