@@ -1,7 +1,6 @@
 FROM nvcr.io/nvidia/tensorrt:19.05-py2
 
-LABEL maintainer "Amine Hadj-Youcef  <amine.hadjyoucef@dronevolt.com"
-LABEL description="some description"
+LABEL maintainer "Amine Hadj-Youcef  <hadjyoucef.amine@gmail.com> "
 
 # install python samples for tensorrt
 # RUN /opt/tensorrt/python/python_setup.sh
